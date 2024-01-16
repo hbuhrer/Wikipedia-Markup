@@ -1,34 +1,82 @@
 body {
     background-color: white;
-    margin: 3rem;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    max-width: 650px;
+}
+
+a {
+    text-decoration: solid;
 }
 
 td {
-    padding-right: 1.5rem;
+    text-align: left;
+    padding-right: 2rem;
+    padding-bottom: 0.3rem;
+}
+
+td img {
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+}
+
+hr {
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    background-color: lightgrey;
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid lightslategray;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.main-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
 }
 
 .first-section {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
 }
 
 .info-table {
     display: block;
+    position: static;
+    margin-top: 4rem;
     margin-left: 2rem;
     text-align: left;
     width: 50%;
     padding-left: 1.3rem;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
-    border: 1px solid black;
-    background-color: rgb(239, 238, 238);
+    border: 1px solid lightslategray;
+    background-color: rgb(242, 242, 242);
     color: black;
+    align-items: start;
+    min-width: 280px;
+    font-size: small;
+    text-indent: -1rem;
 }
 
 .info-pic-text {
     text-align: center;
+    font-size: medium;
+    padding-left: 1rem;
 }
 
 .paragraphs-section-1 {
@@ -40,14 +88,15 @@ td {
     float: left;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    border: 1px solid black;
-    padding: 0.5rem;
+    border: 1px solid lightslategray;
+    padding: 0.3rem;
     margin-left: 0;
+    max-width: 250px;
+    font-size: small;
 }
 
-.gameplay-img {
-    max-width: 100%;
-    height: auto;
+.gameplay-section img {
+    max-width: 250px;
 }
 
 .review-section {
@@ -58,4 +107,32 @@ td {
 .review-table {
     border: 1px solid black;
     margin-right: 1rem;
+}
+
+.info-table-text td {
+    text-indent: -1rem;
+}
+
+.gameplay-top-spacing{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.italic-paragraph {
+    font-style: italic;
+}
+  
+.song-list {
+    display: flex;
+    justify-content: center;
+}
+
+@counter-style thumbs {
+    system: cyclic;
+    symbols: "♪" "♫" "♩" "♬";
+    suffix: " ";
+}
+
+ul {
+    list-style: thumbs;
 }
